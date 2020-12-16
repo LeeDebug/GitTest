@@ -3,6 +3,7 @@
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
   jnkndnjkdna
   {{data1}}
+  {{data2}}
 </template>
 
 <script lang="ts">
@@ -15,6 +16,11 @@ export default {
   data () {
     return {
       data1: '我是data'
+    }
+  },
+  computed: {
+    data2 () {
+      return 'dsdadjnsdjnks'
     }
   }
 }
