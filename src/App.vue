@@ -4,6 +4,7 @@
   jnkndnjkdna
   {{data1}}
   {{data2}}
+  <button @click="handleTest()">按钮</button>
 </template>
 
 <script lang="ts">
@@ -21,6 +22,11 @@ export default {
   computed: {
     data2 () {
       return 'dsdadjnsdjnks'
+    }
+  },
+  method: {
+    handleTest () {
+      console.log('2222222222')
     }
   }
 }
