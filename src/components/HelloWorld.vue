@@ -18,7 +18,7 @@ export default {
   },
   computed: {
     msgC () {
-      return this.count * 2
+      return this.count * 22
     }
   }
 }
