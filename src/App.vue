@@ -2,7 +2,7 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
   {{ data1 }}
-  <button @click="handleTest()">按钮</button>
+  <button @click="handleTest('aaaaaa')">按钮</button>
 </template>
 
 <script lang="ts">
@@ -13,9 +13,16 @@ export default {
     HelloWorld
   },
   setup() {
+    mounted: {
+      console.log('mounted======')
+    }
     const data1 = 'dsds'
+    const handleTest = (v) => {
+      console.log(23333, v)
+    }
     return {
-      data1
+      data1,
+      handleTest
     }
   }
   // method: {
