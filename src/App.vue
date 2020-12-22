@@ -21,6 +21,9 @@ export default {
     const data1 = 'dsds'
     const handleTest = (v) => {
       console.log(23333, v)
+      console.log(23333, v)
+      console.log(23333, v)
+      console.log(23333, v)
     }
     return {
       data1,
