@@ -15,6 +15,8 @@ export default {
   setup() {
     mounted: {
       console.log('mounted======')
+      console.log('mounted======')
+      console.log('mounted======')
     }
     const data1 = 'dsds'
     const handleTest = (v) => {
