@@ -3,13 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "serve": "vue-cli-service serve",
+    "build:micro": "vue-cli-service build --target lib --name myLib ./index.html",
     "build": "vite build"
   },
   "dependencies": {
     "vue": "^3.0.4"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "@vue/cli": "^4.5.9",
+    "@vue/compiler-sfc": "^3.0.4",
+    "vite": "^1.0.0-rc.13"
   }
 }
