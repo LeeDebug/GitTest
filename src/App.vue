@@ -6,6 +6,7 @@
 </template>
 
 <script lang="ts">
+import { onBeforeMount } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
@@ -16,6 +17,11 @@ export default {
     mounted: {
       console.log('mounted======')
     }
+
+    onBeforeMount: {
+      console.log('onBeforeMount======')
+    }
+
     const data1 = 'dsds'
     const handleTest = (v) => {
       console.log(23333, v)
