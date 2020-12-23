@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "serve": "vue-cli-service serve",
-    "build:micro": "vue-cli-service build --target lib --name myLib ./index.html",
+    "build:micro": "vue-cli-service build --target lib --name myLiba ./index.html",
     "build": "vite build"
   },
   "dependencies": {
