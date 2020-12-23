@@ -15,14 +15,9 @@ export default {
   setup() {
     mounted: {
       console.log('mounted======')
-      console.log('mounted======')
-      console.log('mounted======')
     }
     const data1 = 'dsds'
     const handleTest = (v) => {
-      console.log(23333, v)
-      console.log(23333, v)
-      console.log(23333, v)
       console.log(23333, v)
     }
     return {
