@@ -39,7 +39,7 @@ export default {
       key2: '你就开电脑开机撒'
     })
     function handleTest(v) {
-      console.log(23333, v)
+      console.log(23239333, v)
     }
     function handleEdit() {
       reactiveData.key1 *= 2
