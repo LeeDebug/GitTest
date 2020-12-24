@@ -2,11 +2,11 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Hello Vue 3.0 + Vite" /> -->
   {{ data1 }}
-  <button @click="handleTest('aaaaaa')">按钮</button>
+  <button @click="handleTest()">按钮</button>
 </template>
 
 <script lang="ts">
-import { onBeforeMount } from 'vue'
+import { onBeforeMount, onMounted } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
@@ -18,9 +18,13 @@ export default {
       console.log('mounted======')
     }
 
-    onBeforeMount: {
+    onMounted(() => {
+      console.log('onMounted======')
+    })
+
+    onBeforeMount(() => {
       console.log('onBeforeMount======')
-    }
+    })
 
     const data1 = 'dsds'
     const handleTest = (v) => {
