@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { onBeforeMount, onMounted } from 'vue'
+import { onBeforeMount, onMounted, ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
@@ -27,7 +27,7 @@ export default {
       console.log('onBeforeMount======')
     })
 
-    const data1:number = 2
+    const data1:object = ref(2)
     const handleTest = (v) => {
       console.log(23333, v)
     }
