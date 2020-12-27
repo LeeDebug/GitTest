@@ -1,5 +1,10 @@
+echo → 暂存选取所有代码
 git add .
 
-git commit -m 'push.sh auto commit'
+read -p "→ 请输入您的commit提交信息：" MSG
 
-git push -u origin master && git push -u gitee master && git push -u gitlab master
+echo → 提交所有暂存代码
+git commit -m "$MSG"
+
+echo → 将代码推送至三端git仓库
+git push -u all master
