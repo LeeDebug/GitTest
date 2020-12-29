@@ -21,6 +21,7 @@ export default {
     HelloWorld
   },
   setup() {
+    // const store = useStore()
     mounted: {
       console.log('mounted======')
     }

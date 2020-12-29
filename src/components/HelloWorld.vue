@@ -6,20 +6,18 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from "vue"
+export default defineComponent({
   name: 'HelloWorld',
   props: {
     msg: String
   },
-  data() {
+  setup() {
+    const store = 111
+    console.log(2333, store)
     return {
-      count: 0
-    }
-  },
-  computed: {
-    msgC () {
-      return this.count * 22
+      store
     }
   }
-}
+})
 </script>
