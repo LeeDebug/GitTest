@@ -5,6 +5,7 @@
     {{ data1 }}
     <button @click="data1++">+1</button>
     <button @click="handleTest(data1)">按钮2333</button>
+    <button @click="handleTest(data1)">按钮2333</button>
     <div class="text">
       {{reactiveData}}
     </div>
