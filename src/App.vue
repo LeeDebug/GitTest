@@ -12,8 +12,6 @@
       {{reactiveData.key2}}
     </div>
     <button @click="handleEdit()">修改reactiveData</button>
-    <button @click="handleEdit()">修改reactiveData</button>
-    <button @click="handleEdit()">修改reactiveData</button>
   </div>
 </template>
 
