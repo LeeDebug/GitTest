@@ -16,9 +16,9 @@
 </template>
 
 <script lang="ts">
-import { onBeforeMount, onMounted, ref, reactive } from 'vue'
+import { onBeforeMount, onMounted, ref, reactive, defineComponent } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
-export default {
+export default defineComponent({
   name: 'App',
   components: {
     HelloWorld
@@ -56,7 +56,7 @@ export default {
       handleEdit,
     }
   }
-}
+})
 </script>
 
 <style scoped>
