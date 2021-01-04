@@ -35,7 +35,7 @@
 <script lang='ts'>
 import { computed, defineComponent, reactive, ref, toRef } from 'vue'
 import systemAvatar from '../../assets/img/avatar.png'
-import webchatMsgItem from '@/views/webim/components/webchatMsgItem.vue'
+import webchatMsgItem from '../../views/webim/components/webchatMsgItem.vue'
 import { useStore } from 'vuex'
 export default defineComponent({
   name: 'ImContainer',
