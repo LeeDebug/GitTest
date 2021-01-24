@@ -4,6 +4,8 @@
     <hello-world class="a" />
     <hello-world class="a" />
     <hello-world class="a" />
+    <hello-world class="a" />
+    <hello-world class="a" />
   </div>
 </template>
 
