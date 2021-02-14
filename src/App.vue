@@ -7,6 +7,7 @@
 <script lang="ts">
 import { ref, reactive, defineComponent } from 'vue'
 import HelloWorld from './views/home/index.vue'
+// import { useStore } from 'vuex'
 export default defineComponent({
   name: 'App',
   components: {
