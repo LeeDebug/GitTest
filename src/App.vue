@@ -15,6 +15,14 @@ export default defineComponent({
   },
   setup() {
     // const store = useStore()
+    const arr = [];
+    const obj = {};
+    for (const key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        const element = obj[key];
+        console.log(element);
+      }
+    }
 
     return {
     }
