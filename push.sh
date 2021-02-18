@@ -8,3 +8,6 @@ git commit -m "$MSG"
 
 echo → 将代码推送至三端git仓库
 git push -u all master
+
+echo → 重新fetch最新代码
+git fetch
