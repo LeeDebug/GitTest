@@ -23,7 +23,6 @@ export default defineComponent({
         console.log(element);
         console.log(element);
         console.log(element);
-        console.log(element);
       }
     }
 
