@@ -88,6 +88,13 @@
             "
           ></div>
 
+          <!-- 图片消息 -->
+          <img
+            v-if="watchChatMsg.contentType === 'image'"
+            :src="watchChatMsg.content"
+            class="imageMsg"
+          />
+
         </div>
         <!-- #endregion -->
       </div>
