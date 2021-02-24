@@ -93,8 +93,6 @@
             v-if="watchChatMsg.contentType === 'image'"
             :src="watchChatMsg.content"
             class="imageMsg"
-            class="imageMsg"
-            class="imageMsg"
           />
 
         </div>
