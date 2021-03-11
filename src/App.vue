@@ -21,12 +21,6 @@ export default defineComponent({
       if (Object.prototype.hasOwnProperty.call(obj, key)) {
         const element = obj[key];
         console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
       }
     }
 
