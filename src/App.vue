@@ -22,6 +22,10 @@ export default defineComponent({
         const element = obj[key];
         console.log(element);
         console.log(element);
+        console.log(element);
+        console.log(element);
+        console.log(element);
+        console.log(element);
       }
     }
 
