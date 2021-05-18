@@ -1,6 +1,9 @@
 <template>
   <div>
-    <hello-world class="a" />
+    <div v-for="(item) in obj" :key="item">
+      {{ item }}
+    </div>
+    <!-- <hello-world class="a" /> -->
   </div>
 </template>
 
@@ -16,15 +19,14 @@ export default defineComponent({
   setup() {
     // const store = useStore()
     const arr = [];
-    const obj = {};
-    for (const key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        const element = obj[key];
-        console.log(element);
-      }
-    }
+    const obj = {
+      aa: 111,
+      bb: 222,
+      cc: 333,
+    };
 
     return {
+      obj,
     }
   }
 })
