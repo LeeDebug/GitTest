@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <div v-for="(item) in obj" :key="item">
-      {{ item }}
+  <div class="main">
+    <div v-for="(item, key, idx) in obj" :key="item">
+      <span>item: {{ item }}；</span>
+      <span>key: {{ key }}；</span>
+      <span>idx: {{ idx }}</span>
     </div>
     <!-- <hello-world class="a" /> -->
   </div>
@@ -9,12 +11,10 @@
 
 <script lang="ts">
 import { ref, reactive, defineComponent } from 'vue'
-import HelloWorld from './views/home/index.vue'
 // import { useStore } from 'vuex'
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
   },
   setup() {
     // const store = useStore()
@@ -37,8 +37,5 @@ export default defineComponent({
   border: 1px solid red;
   width: 800px;
   height: 300px;
-}
-button {
-  display: block;
 }
 </style>
