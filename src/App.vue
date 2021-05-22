@@ -1,37 +1,32 @@
 <template>
-  <div>
-    <hello-world class="a" />
+  <div class="main">
+    <div v-for="(item, key, idx) in obj" :key="item">
+      <span>item: {{ item }}；</span>
+      <span>key: {{ key }}；</span>
+      <span>idx: {{ idx }}</span>
+    </div>
+    <!-- <hello-world class="a" /> -->
   </div>
 </template>
 
 <script lang="ts">
 import { ref, reactive, defineComponent } from 'vue'
-import HelloWorld from './views/home/index.vue'
 // import { useStore } from 'vuex'
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
   },
   setup() {
     // const store = useStore()
     const arr = [];
-    const obj = {};
-    for (const key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        const element = obj[key];
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-        console.log(element);
-      }
-    }
+    const obj = {
+      aa: 111,
+      bb: 222,
+      cc: 333,
+    };
 
     return {
+      obj,
     }
   }
 })
@@ -42,8 +37,5 @@ export default defineComponent({
   border: 1px solid red;
   width: 800px;
   height: 300px;
-}
-button {
-  display: block;
 }
 </style>
