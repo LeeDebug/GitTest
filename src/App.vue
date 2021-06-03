@@ -2,9 +2,17 @@
   <div class="main">
     <div v-for="(item, key, idx) in obj" :key="item">
       <span>item: {{ item }}；</span>
+      <span>item: {{ item }}；</span>
+      <span>item: {{ item }}；</span>
+      <span>key: {{ key }}；</span>
+      <span>key: {{ key }}；</span>
       <span>key: {{ key }}；</span>
       <span>idx: {{ idx }}</span>
+      <span>idx: {{ idx }}</span>
+      <span>idx: {{ idx }}</span>
     </div>
+    <!-- <hello-world class="a" /> -->
+    <!-- <hello-world class="a" /> -->
     <!-- <hello-world class="a" /> -->
   </div>
 </template>
